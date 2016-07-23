@@ -58,7 +58,7 @@ int main(int argc, char *argv[]) {
         end--;
     }
 
-    if(start * 2 == k) {
+    if(k % 2 == 0 && m.find(k/2) != m.end()) {
         count++;
     }
 
