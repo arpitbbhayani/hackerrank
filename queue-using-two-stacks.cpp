@@ -38,25 +38,27 @@ stack<int> s2;
 int front_val;
 
 void enqueue(int x) {
+    while(!s2.empty()) {
+        s1.push(s2.top());
+        s2.pop();
+    }
     if(s1.empty()) {
         front_val = x;
     }
     s1.push(x);
 }
 
-void dequeue() {
+int dequeue() {
     while(!s1.empty()) {
         s2.push(s1.top());
         s1.pop();
     }
+    int x = s2.top();
     s2.pop();
     if(!s2.empty()) {
         front_val = s2.top();
     }
-    while(!s2.empty()) {
-        s1.push(s2.top());
-        s2.pop();
-    }
+    return x;
 }
 
 int front() {
@@ -66,7 +68,6 @@ int front() {
 int main(int argc, char *argv[]) {
     int t;
     scanf("%d", &t);
-
     while(t--) {
         int op;
         scanf("%d", &op);
