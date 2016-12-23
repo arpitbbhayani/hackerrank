@@ -1,6 +1,5 @@
-# hackerrank - The repository full of hackerrank solutions
-
-This repository contains solutions to various questions on [Hackerrank](https://www.hackerrank.com/).
+# HackerRank Solutions
+The repository full of solutions to questions hosted on [Hackerrank](https://www.hackerrank.com/).
 
 It is **NOT** advisable to directly copy and paste the solution and make them work for you, but I would recommend you to first try out finding right, efficient and optimized solution by yourself and in case after a lot of tries you are unable to do so then you can anyday take help from this repository.
 
